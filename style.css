@@ -79,6 +79,7 @@ a {
   gap: 1em;
 }
 
+
 .seller-container {
   display: flex;
   min-width: 20px;
@@ -88,16 +89,16 @@ a {
   padding: 20px;
 }
 
-a .seller {
+/* a .seller {
   margin: 20px;
   padding: 20px;
-}
+} */
 
 .trending-container {
   display: flex;
-  gap: 2em;
+  gap: 4px;
+  padding: 5px;
   flex-wrap: wrap;
-  padding: 20px;
 }
 
 .lykdat-business {
@@ -192,6 +193,25 @@ li a {
   color: whitesmoke;
 }
 
+li a::visited {
+    color: whitesmoke;
+  }
+
 .popular {
-  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  border-radius: 10px;
+
 }
+
+.trending0img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px; 
+}
+
+/* .seller-img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+} */
