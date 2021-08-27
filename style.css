@@ -23,6 +23,11 @@ p {
   margin: 0;
 }
 
+span {
+  background-color: red;
+  color: white;
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
@@ -75,6 +80,18 @@ p {
   text-transform: capitalize;
 }
 
+.btn2 {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 1.25em;
+  background: black;
+  color: white;
+  margin: 3px;
+  font-weight: 300;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
 .section-title {
   padding: 20px 0;
   text-align: start;
@@ -97,32 +114,122 @@ a {
   text-decoration: none;
 }
 
-.split {
-  display: flex;
-  min-height: 5em;
-  gap: 1em;
+
+#header {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto;
+}
+
+.nav-link {
+  color: grey;
+  padding: 5px;
 }
 
 
-.seller-container {
+.logo {
+    padding: 5px 20px;
+}
+
+#header .nav-container {
+  min-height: 8vh;
+  background: white;
+}
+
+.nav-container .nav-bar {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+
+.split {
+  /* display: flex;
+  min-height: 5em;
+  gap: 1em; */
+  width: 100%;
+  min-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  column-gap: 12px;
+}
+
+.popular {
+  /* max-width: 100%;
+  height: 200px; */
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 230px ;
+   
+
+}
+.trending-container {
+  /* display: flex;
+  gap: 4px;
+  padding: 5px;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0px,1fr));
+  column-gap: 16px;
+  width: 100%;
+}
+
+.trending0img {
+  /* width: 100%;
+  height: 300px;
+  border-radius: 10px; 
+  object-fit: cover; */
+  height: 230px;
+  width: 100%;
+}
+
+
+
+.seller-container {
+  /* display: flex;
   min-width: 20px;
   min-height: 20px;
   gap: 1em;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 20px; */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px,1fr));
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 48px;
+  padding-bottom: 24px;
 }
 
-/* a .seller {
-  margin: 20px;
-  padding: 20px;
-} */
-
-.trending-container {
+.seller-img {
+  /* object-fit: contain; */
+  height: 190px;
+  padding: 12px;
   display: flex;
-  gap: 4px;
-  padding: 5px;
-  flex-wrap: wrap;
+  -webkit-box-pack:   center;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.container-sale {
+  background: rgb(251, 63, 63);
+  background: radial-gradient(
+    circle,
+    rgba(251, 63, 63, 1) 0%,
+    rgba(74, 64, 65, 0.5494572829131652) 0%
+  );
+  text-align: center;
+  /* height: 70vh;
+  width: 100vw; */
+  padding: 100px;
 }
 
 .lykdat-business {
@@ -143,64 +250,14 @@ a {
   line-height: 1;
 }
 
-.btn2 {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.5em 1.25em;
-  background: black;
-  color: white;
-  margin: 3px;
-  font-weight: 300;
-  font-size: 20px;
-  border-radius: 5px;
-}
-
-.container-sale {
-  background: rgb(251, 63, 63);
-  background: radial-gradient(
-    circle,
-    rgba(251, 63, 63, 1) 0%,
-    rgba(74, 64, 65, 0.5494572829131652) 0%
-  );
-  text-align: center;
-  /* height: 70vh;
-  width: 100vw; */
-  padding: 100px;
-}
-
-span {
-  background-color: red;
-  color: white;
-}
 
 .lykdat-business {
   background: white;
   padding: 50px 200px;
 }
 
-#header {
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: auto;
-}
 
-#header .nav-container {
-  min-height: 8vh;
-  background: white;
-}
 
-.nav-container .nav-bar {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  max-width: 1300px;
-  padding: 0 10px;
-}
 
 .btn2 {
   display: inline-block;
@@ -214,35 +271,7 @@ span {
   text-transform: capitalize;
 }
 
-.nav-link {
-  color: grey;
-  padding: 5px;
-}
 
-
-.logo {
-    padding: 5px 20px;
-}
-.popular {
-  max-width: 100%;
-  height: 200px;
-  border-radius: 10px;
-  object-fit: contain;
-
-}
-
-.trending0img {
-    max-width: 100%;
-    height: 300px;
-    border-radius: 10px; 
-    object-fit: cover;
-}
-
-.seller-img {
-    /* object-fit: contain; */
-    height: 400px;
-    width: 200px;
-}
 
 .footer-container {
     background-color: white;
