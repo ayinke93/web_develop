@@ -5,22 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./new_style.css">
 </head>
 <body>
     
     <section id="header">
-        <div class="nav-container">
-            <div class="nav-bar">
-                <img src="./logo.svg" alt="" class="logo">
-                <ul>
-                        <l1><a href="#">Home</a></l1>
-                        <l1><a href="#">Inspiration</a></l1>
-                        <l1><a href="#">Search</a></l1>
-                        <l1><a href="#">Sign in</a></l1>
-                        <l1><a class="btn2" href="#">Sign-up</a></l1>
-                </ul>
-            </div>
+        <div class="nav-bar">
+            <img src="./logo.svg" alt="" class="logo">
+            <ul>
+                <l1><a class="nav-link" href="#">Home</a></l1>
+                <l1><a class="nav-link" href="#">Inspiration</a></l1>
+                <l1><a class="nav-link" href="#">Search</a></l1>
+                <l1><a class="nav-link" href="#">Sign in</a></l1>
+                <l1><a class="btn2" href="#">Sign-up</a></l1>
+            </ul>
         </div>
     </section>
     <section>
@@ -29,8 +27,11 @@
                 <h1 class="primary-title">
                     Search for fashion with images and shop the look
                 </h1>
-                <a href="" class="btn">Search with image</a>
-                <a href="" class="btn">Search with text</a>
+                <div class="btn-container">
+                    <div><a href="" class="btn-img">Search with image</a></div>
+                    <div class="btn">or</div>
+                    <div><a href="" class="btn-text">Search with text</a></div>
+                </div>
             </div>
         </header>
     </section>
@@ -56,7 +57,7 @@
         </section>
         <section class="sale">
             <div class="container-sale">
-                <span>sale</span> <span>sale</span> <span>sale</span>
+                <span class="sale-span">sale</span> <span class="sale-span">sale</span> <span class="sale-span">sale</span>
                 <h3>Up to</h3>
                 <h1>100% off</h1>
                 <a href="#" class="btn">Shop all sale</a>
@@ -122,10 +123,30 @@
                 <h2 class="section-title">
                     Lykdat for businesses
                 </h2>
-                <h1>
+                <h1 class="business-head">
                     Power your fashion ecommerce business with AI visual discovery
                 </h1>
                 <a href="" class="btn2">Learn more</a>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer-container">
+                <div class="footbar-right">
+                    <img src="./logo.svg" alt="" class="logo">
+                    <ul>
+                        <l1><a class="left-col" href="#">About us</a></l1>
+                        <l1><a class="left-col" href="#">blog</a></l1>
+                        <l1><a class="left-col" href="#">lykdat for business</a></l1>
+                        <l1><a class="left-col" href="#">Contact</a></l1>
+                    </ul>
+                </div>
+                <div class="footbar-left">
+                    <ul>
+                        <l1><a class="right-col" href="#">Privacy</a></l1>
+                        <l1><a class="right-col" href="#">Terms of service</a></l1>
+                        <l1><a class="copy" href="#">&copy; 2021 lykdat.com</a></l1>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
