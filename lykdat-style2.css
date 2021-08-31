@@ -35,12 +35,15 @@ body {
   
 
 .container {
-    display: flex;
-    flex-direction: row;
+    display : flex !important ;
+    flex-direction: row !important ;
 }
 
 .container_left {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 h2 {
@@ -54,6 +57,7 @@ h2 {
     justify-content: center;
     margin-top: 50px;
     padding-top: 50px;
+
 }
 
 .images {
@@ -167,7 +171,7 @@ span {
 }
 
 .left-image {
-    width: 100%;
+    width: 30%;
     position: relative;
     border-radius: 8px;
 }
@@ -239,4 +243,80 @@ span {
 .edit {
     display: flex;
 }
+
+
+/* Accordion */
+
+.left-container-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tab {
+    position: relative;
+    max-width: 300px;
+}
+
+.tab input {
+    display: none;
+}
+
+.tab label {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+.tab .tab-content {
+    background: whitesmoke;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.tab input:checked ~ .tab-content { max-height: 100vh; }
+
+.tab label::after {
+    content: "\25b6";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: all 0.4s;
+}
+.tab input:checked ~ label::after { transform: rotate(90deg); }
+
+.btn-tab {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    background: transparent;
+    color: grey;
+    margin: 3px;
+    font-weight: 200;
+    font-size: 15px;
+    text-transform: capitalize;
+    border: .5px grey solid;
+    border-radius: 5px;
+}
+
+.btn-tab-2 {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.3em .7em;
+    background: transparent;
+    color: grey;
+    margin: 3px;
+    font-weight: 200;
+    font-size: 15px;
+    text-transform: capitalize;
+    border: .5px grey solid;
+    border-radius: 5px;
+}
+
 
