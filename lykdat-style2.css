@@ -71,8 +71,8 @@ h2 {
 .search-img {
     height: 230px;
     width: 100%;
-    /* border-top-left-radius: 10px;
-    border-top-right-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     object-fit: cover;
 
 }
@@ -156,6 +156,7 @@ span {
     border-bottom-right-radius: 10px; */
     /* padding: 10px; */
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 /* .left-container-top {
@@ -171,7 +172,7 @@ span {
 }
 
 .left-image {
-    width: 30%;
+    width: 80%;
     position: relative;
     border-radius: 8px;
 }
@@ -289,7 +290,7 @@ span {
     display: block;
     transition: all 0.4s;
 }
-.tab input:checked ~ label::after { transform: rotate(90deg); }
+.tab input:checked ~ label::after { transform: rotate(180deg); }
 
 .btn-tab {
     display: inline-block;
@@ -318,5 +319,13 @@ span {
     border: .5px grey solid;
     border-radius: 5px;
 }
+
+/* .tab-container {
+    display: 100vh;
+    position: fixed;
+} */
+
+
+
 
 
