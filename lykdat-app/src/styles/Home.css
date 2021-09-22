@@ -1,0 +1,125 @@
+.bodyContainer {
+  padding-top: 60px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: black;
+  margin: AUTO;
+  background-color: #fafafa;
+}
+
+.headerSection {
+  max-width: 700px;
+}
+
+.headerSection h1 {
+  margin: 16px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.searchButtonGroup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  margin-right: 16px;
+}
+.sBtn {
+  padding: 12px 24px;
+  text-align: center;
+  display: flex;
+  line-height: 22px;
+}
+.sBtn span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.searchWithImageBtn {
+  background-color: black;
+  position: relative;
+  border-radius: 4px 0px 0px 4px;
+}
+.searchWithImageBtn span {
+  color: white;
+}
+
+.searchWithTextBtn {
+  background-color: white;
+  border-radius: 0px 4px 4px 0px;
+}
+.searchWithTextBtn span {
+  color: black;
+}
+.or-bridge {
+  border-radius: 50%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 3;
+  background-color: white;
+  transform: translateX(50%);
+  text-align: center;
+  border: 1px solid black;
+}
+
+.catSection {
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 3%;
+}
+.trendingSection {
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 3%;
+}
+.trendingProducts {
+  display: flex;
+  flex-flow: row wrap;
+}
+/* .sellerSection {
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 3%;
+} */
+
+.sellersection {
+  width: 100%;
+  max-width: 1030px;
+  margin: 10px;
+}
+.sellerItems {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  gap: 16px;
+  /* width: 30%; */
+  margin-bottom: 48px;
+  padding: 24px;
+  max-width: 1030px;
+}
+
+.searchsection {
+  width: 100%;
+  max-width: 1030px;
+  margin: 50px;
+  padding: auto;
+}
+
+.searchitem {
+  display: block;
+  background-color: transparent;
+  margin: 50px;
+  padding: auto;
+  font-weight: 300;
+}
+
+.tell-us h3 {
+  text-align: left;
+}

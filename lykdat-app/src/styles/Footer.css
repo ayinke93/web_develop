@@ -1,0 +1,18 @@
+.footer {
+  background-color: transparent;
+  display: flex;
+  padding: 50px 0;
+}
+
+.footright {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.footleft {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 380px;
+}

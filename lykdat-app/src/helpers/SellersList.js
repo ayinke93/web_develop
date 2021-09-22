@@ -1,0 +1,25 @@
+export const SellersList = [
+    {
+        image:"https://storage.googleapis.com/amoeba-bucket-prod/lykdat_assets/vendor_logos/shopstyle.png"
+    },
+    {
+        image:"https://storage.googleapis.com/amoeba-bucket-prod/lykdat_assets/vendor_logos/asos.png"
+    },
+    {
+        image:"https://storage.googleapis.com/amoeba-bucket-prod/lykdat_assets/vendor_logos/shein.png"
+    },
+    {
+        image:"https://storage.googleapis.com/amoeba-bucket-prod/lykdat_assets/vendor_logos/fashionnova.png"
+    },
+    {
+        image:"https://storage.googleapis.com/amoeba-bucket-prod/lykdat_assets/vendor_logos/boohoo.png"
+    },{
+        image:"https://storage.googleapis.com/amoeba-bucket-prod/lykdat_assets/vendor_logos/prettylittlething.png"
+    },
+    {
+        image:"https://storage.googleapis.com/amoeba-bucket-prod/lykdat_assets/vendor_logos/zalando.png"
+    },
+    {
+        image:"https://storage.googleapis.com/amoeba-bucket-prod/lykdat_assets/vendor_logos/farfetch.png"
+    },
+]
